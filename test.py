@@ -10,8 +10,10 @@ class TestCalculatorFunction(unittest.TestCase):
         self.assertNotEqual(yearsAmount(1000, 15, 2000), 6)
         self.assertNotEqual(yearsAmount(1000, 15, 2000), 8)
 
-    def test_sumAmountOnDeposit(self):
+    def test_type(self):
         self.assertIsInstance(yearsAmount(1000, 15, 2000), int)
+
+    
 
 if __name__ == '__main__':
     unittest.main(verbosity=2)
